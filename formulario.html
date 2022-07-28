@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/formEstilo.css">
+    <title>Cadastro Clientes</title>
+
+</head>
+<body>
+
+    <main>
+
+        <h1>Cadastro de Cliente</h1>
+        
+        <form action="">
+
+            <div class="Caixas">
+
+                <!-- required é para que o usuario seja informado de preencher todos os campos -->
+                <label for="username">Nome:</label><br>
+                <input type="text" name="username" id="username" placeholder="Informe seu Nome" required>
+
+
+            </div>
+
+            <div class="Caixas">
+
+                <label for="endereco">Endereço:</label><br>
+                <input type="text" name="endereco" id="endereco" placeholder="Informe seu Endereço" required>
+
+            </div>
+
+            <div class="Caixas">
+
+                <label for="telefone">Telefone:</label><br>
+                <!-- no pattern estou formatando o numero da forma que quero que o cliente digite -->
+                <input type="tel" name="telefone" id="telefone" pattern="\(0-9){2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx" required>
+
+            </div>
+
+            <div class="Caixas">
+
+                <label for="e-mail">E-mail:</label><br>
+                <input type="email" name="e-mail" id="e-mail" placeholder="Informe seu E-mail" required>
+
+            </div>
+
+            <div class="Caixas">
+
+                <label for="produtos">Produto(s) de Interesse:</label><br>
+                <input type="text" name="produtos" id="produtos" placeholder="Quais produto(s)" required>
+
+            </div>
+
+            <!-- determinando um botão (sem a tag button) -->
+            <input class="botao" type="submit" value="Cadastrar">
+
+        </form>
+
+
+    </main>
+    
+</body>
+</html>
